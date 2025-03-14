@@ -1,0 +1,129 @@
+/* Основные стили */
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+header {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    background-color: inherit;
+    border: 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+div {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.movies {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.movies li {
+    width: 350px;
+}
+
+.movies img {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .movies li {
+        width: 250px;
+    }
+
+    div {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .movies li {
+        width: 150px;
+    }
+
+    div {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode section {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
