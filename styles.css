@@ -31,6 +31,7 @@ header button {
 
 nav ul {
     list-style: none;
+    flex-wrap: wrap;
     padding: 0;
     display: flex;
     gap: 20px;
