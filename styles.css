@@ -61,11 +61,19 @@ section h2 {
 }
 
 img {
+    border: none;
+    transition: all 0.3s ease;
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
+
+#movies img:hover {
+    transform: scale(1.05);
+    border: 5px solid dodgerblue;
+}
+
 
 footer {
     text-align: center;
